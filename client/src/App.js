@@ -4,6 +4,7 @@ import AllStudents from './components/AllStudents';
 import {Router, Link} from '@reach/router';
 import OneStudent from './components/OneStudent';
 import NewStudent from './components/NewStudent';
+import Edit from './components/Edit';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <AllStudents path="/"></AllStudents>
         <NewStudent path="/students/new"></NewStudent>
         <OneStudent path="/students/:id"></OneStudent>
+        <Edit path="/students/edit/:id"></Edit>
       </Router>
     </div>
   );
